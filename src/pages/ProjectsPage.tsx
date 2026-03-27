@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import logoImg from "../assets/logo/logo.png";
+import logoImg from "../assets/logo/logo.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },

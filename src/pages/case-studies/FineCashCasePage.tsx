@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 
 import GalleryModal from "../../components/GalleryModal";
 
-import dashboardImg from "../../assets/dashboard/dashboard.png";
-import dashboardImg2 from "../../assets/dashboard/dashboard2.png";
-import dashboardImg3 from "../../assets/dashboard/dashboard3.png";
-import dashboardImg4 from "../../assets/dashboard/dashboard4.png";
-import landingImg from "../../assets/landing.png";
-import transactionImg1 from "../../assets/transaction/transaction1.png";
-import transactionImg2 from "../../assets/transaction/transaction2.png";
-import transactionImg3 from "../../assets/transaction/transaction3.png";
-import transactionImg4 from "../../assets/transaction/transaction4.png";
-import householdImg1 from "../../assets/household/household1.png";
-import householdImg2 from "../../assets/household/household2.png";
-import householdImg3 from "../../assets/household/household3.png";
+import dashboardImg from "../../assets/dashboard/dashboard.webp";
+import dashboardImg2 from "../../assets/dashboard/dashboard2.webp";
+import dashboardImg3 from "../../assets/dashboard/dashboard3.webp";
+import dashboardImg4 from "../../assets/dashboard/dashboard4.webp";
+import landingImg from "../../assets/landing.webp";
+import transactionImg1 from "../../assets/transaction/transaction1.webp";
+import transactionImg2 from "../../assets/transaction/transaction2.webp";
+import transactionImg3 from "../../assets/transaction/transaction3.webp";
+import transactionImg4 from "../../assets/transaction/transaction4.webp";
+import householdImg1 from "../../assets/household/household1.webp";
+import householdImg2 from "../../assets/household/household2.webp";
+import householdImg3 from "../../assets/household/household3.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
