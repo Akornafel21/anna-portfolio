@@ -9,6 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import ResumePage from "./pages/ResumePage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import CrazyFMCasePage from "./pages/case-studies/CrazyFMCasePage";
 
 function App() {
   return(
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/finecash" element={<FineCashCasePage />} />
+        <Route path="/projects/crazyfm" element={<CrazyFMCasePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/contact" element={<ContactPage />} />

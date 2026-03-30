@@ -8,7 +8,7 @@ import dashboardImg from "../../assets/dashboard/dashboard.webp";
 import dashboardImg2 from "../../assets/dashboard/dashboard2.webp";
 import dashboardImg3 from "../../assets/dashboard/dashboard3.webp";
 import dashboardImg4 from "../../assets/dashboard/dashboard4.webp";
-import landingImg from "../../assets/landing.webp";
+import landingImg from "../../assets/landing/landing.webp";
 import transactionImg1 from "../../assets/transaction/transaction1.webp";
 import transactionImg2 from "../../assets/transaction/transaction2.webp";
 import transactionImg3 from "../../assets/transaction/transaction3.webp";
