@@ -27,12 +27,6 @@ export default function Header() {
             About
           </NavLink>
           <NavLink
-            to="/resume"
-            className={({ isActive }) => `${linkBase} ${isActive ? linkActive : ""}`}
-          >
-            Resume
-          </NavLink>
-          <NavLink
             to="/contact"
             className={({ isActive }) => `${linkBase} ${isActive ? linkActive : ""}`}
           >

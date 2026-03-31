@@ -27,12 +27,6 @@ export default function HomePage() {
               View projects
             </Link>
             <Link
-              to="/projects/finecash"
-              className="inline-flex items-center rounded-full border px-5 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-50 transition"
-            >
-              FineCash case study
-            </Link>
-            <Link
               to="/contact"
               className="inline-flex items-center rounded-full border px-5 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-50 transition"
             >
@@ -44,19 +38,21 @@ export default function HomePage() {
 
       {/* QUICK HIGHLIGHTS */}
       <section className="grid gap-4 md:grid-cols-3">
-        <div className="rounded-2xl border p-5">
+        <div className="rounded-2xl border border-black/10 bg-white/70 p-5 shadow-sm">
           <p className="text-sm font-semibold">Data visualization</p>
           <p className="mt-2 text-sm text-gray-600">
             Dashboards, charts, UI logic and API data integration.
           </p>
         </div>
-        <div className="rounded-2xl border p-5">
+
+        <div className="rounded-2xl border border-black/10 bg-white/70 p-5 shadow-sm">
           <p className="text-sm font-semibold">UI/UX mindset</p>
           <p className="mt-2 text-sm text-gray-600">
             User-centered design, clarity, consistency, small details.
           </p>
         </div>
-        <div className="rounded-2xl border p-5">
+
+        <div className="rounded-2xl border border-black/10 bg-white/70 p-5 shadow-sm">
           <p className="text-sm font-semibold">Teamwork</p>
           <p className="mt-2 text-sm text-gray-600">
             Scrum basics, communication, real group project experience.

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import GalleryModal from "../../components/GalleryModal";
 
-import crazyLogoImg from "../../assets/logo/logo_fm.webp";
 import crazyLandingImg from "../../assets/crazyfm/crazy-landing.webp";
 import crazyShowsImg from "../../assets/crazyfm/crazy-shows.webp";
 import crazyScheduleImg from "../../assets/crazyfm/crazy-schedule.webp";
@@ -12,6 +11,10 @@ import crazyPodcastsImg from "../../assets/crazyfm/crazy-podcasts.webp";
 import crazyDatabaseDiagramImg from "../../assets/crazyfm/er-diagram.webp";
 import crazySqlSchemaImg from "../../assets/crazyfm/sql-schema.webp";
 import crazyArchitectureImg from "../../assets/crazyfm/crazy-architecture.webp";
+import crazyShowPageImg from "../../assets/crazyfm/crazy-shows-page.webp";
+import crazySubscriptionsImg from "../../assets/crazyfm/crazy-subscriptions.webp";
+import crazyCreateShowImg from "../../assets/crazyfm/crazy-create-show.webp";
+import crazyEditShowImg from "../../assets/crazyfm/crazy-edit-show.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
@@ -91,7 +94,26 @@ export default function CrazyFMCasePage() {
   ];
 
   const showsGallery: GalleryImage[] = [
-    { src: crazyShowsImg, alt: "CrazyFM shows" },
+    { 
+        src: crazyShowsImg,
+        alt: "CrazyFM shows"
+    },
+    {
+        src: crazyShowPageImg,
+        alt: "CrazyFM show page"
+    },
+    {
+        src: crazySubscriptionsImg,
+        alt: "CrazyFM subscriptions"
+    },
+    {
+        src: crazyCreateShowImg,
+        alt: "CrazyFM create show"
+    },
+    {
+        src: crazyEditShowImg,
+        alt: "CrazyFM edit show"
+    },
   ];
 
   const scheduleGallery: GalleryImage[] = [
@@ -180,15 +202,6 @@ const databaseGallery: GalleryImage[] = [
             </div>
           </div>
 
-          <div className="flex h-[110px] w-[110px] shrink-0 items-center justify-center rounded-[28px] bg-gradient-to-br from-brand-primary/10 to-white shadow-sm">
-            <img
-              src={crazyLogoImg}
-              alt="CrazyFM logo"
-              className="h-16 w-16 object-contain"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
         </div>
       </motion.section>
 
@@ -310,7 +323,7 @@ const databaseGallery: GalleryImage[] = [
           >
             <GalleryCard
               img={crazyShowsImg}
-              title="Shows"
+              title="Shows & Subscriptions"
               subtitle="Shows grid, actions and subscriptions flow"
             />
           </button>
