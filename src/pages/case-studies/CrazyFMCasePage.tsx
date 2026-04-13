@@ -205,6 +205,72 @@ const databaseGallery: GalleryImage[] = [
         </div>
       </motion.section>
 
+            <motion.section
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeUp}
+        className="space-y-4"
+      >
+        <div>
+          <h2 className="text-2xl font-bold">Screens & visuals</h2>
+          <p className="mt-1 text-sm text-black/70">
+            Demo gallery for now. Replace these placeholders with your real
+            CrazyFM screenshots later.
+          </p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <button
+            type="button"
+            onClick={() => setOpenGallery("landing")}
+            className="text-left"
+          >
+            <GalleryCard
+              img={crazyLandingImg}
+              title="Landing"
+              subtitle="Homepage, hero section and first impression"
+            />
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setOpenGallery("shows")}
+            className="text-left"
+          >
+            <GalleryCard
+              img={crazyShowsImg}
+              title="Shows & Subscriptions"
+              subtitle="Shows grid, actions and subscriptions flow"
+            />
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setOpenGallery("schedule")}
+            className="text-left"
+          >
+            <GalleryCard
+              img={crazyScheduleImg}
+              title="Schedule & Podcasts"
+              subtitle="Structured content pages and information layout"
+            />
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setOpenGallery("database")}
+            className="text-left"
+            >
+            <GalleryCard
+                img={crazyArchitectureImg}
+                title="Architecture"
+                subtitle="Controllers, routes, middleware and database structure"
+            />
+           </button>
+        </div>
+      </motion.section>
+
       <motion.section
         initial="hidden"
         whileInView="show"
@@ -288,71 +354,6 @@ const databaseGallery: GalleryImage[] = [
         </div>
       </motion.section>
 
-      <motion.section
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeUp}
-        className="space-y-4"
-      >
-        <div>
-          <h2 className="text-2xl font-bold">Screens & visuals</h2>
-          <p className="mt-1 text-sm text-black/70">
-            Demo gallery for now. Replace these placeholders with your real
-            CrazyFM screenshots later.
-          </p>
-        </div>
-
-        <div className="grid gap-4 md:grid-cols-2">
-          <button
-            type="button"
-            onClick={() => setOpenGallery("landing")}
-            className="text-left"
-          >
-            <GalleryCard
-              img={crazyLandingImg}
-              title="Landing"
-              subtitle="Homepage, hero section and first impression"
-            />
-          </button>
-
-          <button
-            type="button"
-            onClick={() => setOpenGallery("shows")}
-            className="text-left"
-          >
-            <GalleryCard
-              img={crazyShowsImg}
-              title="Shows & Subscriptions"
-              subtitle="Shows grid, actions and subscriptions flow"
-            />
-          </button>
-
-          <button
-            type="button"
-            onClick={() => setOpenGallery("schedule")}
-            className="text-left"
-          >
-            <GalleryCard
-              img={crazyScheduleImg}
-              title="Schedule & Podcasts"
-              subtitle="Structured content pages and information layout"
-            />
-          </button>
-
-          <button
-            type="button"
-            onClick={() => setOpenGallery("database")}
-            className="text-left"
-            >
-            <GalleryCard
-                img={crazyArchitectureImg}
-                title="Architecture"
-                subtitle="Controllers, routes, middleware and database structure"
-            />
-           </button>
-        </div>
-      </motion.section>
 
       <motion.section
         initial="hidden"

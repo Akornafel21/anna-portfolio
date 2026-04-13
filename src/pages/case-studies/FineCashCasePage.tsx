@@ -172,67 +172,7 @@ export default function FineCashCasePage() {
         </div>
       </motion.section>
 
-      {/* OVERVIEW */}
-      <motion.section
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeUp}
-        className="grid gap-4 md:grid-cols-3"
-      >
-        <Card title="Product">
-          Personal + shared household budgeting, dashboards and clear spending insights
-        </Card>
-        <Card title="Key features">
-          OCR receipt scanning + automatic categorization (Ollama), shared households, gaming mode
-        </Card>
-        <Card title="My role (Frontend)">
-          Dashboard UI, donut chart, income/expense timeline chart, full household page logic & API integration
-        </Card>
-      </motion.section>
-
-      {/* MY CONTRIBUTIONS */}
-      <motion.section
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeUp}
-        className="rounded-3xl border border-black/10 bg-white/50 p-7 md:p-10"
-      >
-        <h2 className="text-2xl font-bold">What I implemented</h2>
-
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-black/10 bg-white/60 p-5">
-            <p className="font-semibold">Donut chart — spending by category</p>
-            <p className="mt-2 text-sm text-black/70">
-              Grouped expenses by category, displayed totals and percentages, supported filtering and clean legends.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-black/10 bg-white/60 p-5">
-            <p className="font-semibold">Timeline chart — income & expenses over time</p>
-            <p className="mt-2 text-sm text-black/70">
-              Implemented a time-based chart with toggles (expenses / income / both) and consistent UI states.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-black/10 bg-white/60 p-5">
-            <p className="font-semibold">Household page — multi-user logic</p>
-            <p className="mt-2 text-sm text-black/70">
-              Built the household page end-to-end: data mapping, household switch, UI logic and correct assignment of data per household.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-black/10 bg-white/60 p-5">
-            <p className="font-semibold">Dashboard UI & polish</p>
-            <p className="mt-2 text-sm text-black/70">
-              UI optimizations, bug fixes, responsive improvements, and API-data integration into visualization components.
-            </p>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* GALLERY */}
+                  {/* GALLERY */}
       <motion.section
         initial="hidden"
         whileInView="show"
@@ -299,6 +239,68 @@ export default function FineCashCasePage() {
           </button>
         </div>
       </motion.section>
+
+      {/* OVERVIEW */}
+      <motion.section
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeUp}
+        className="grid gap-4 md:grid-cols-3"
+      >
+        <Card title="Product">
+          Personal + shared household budgeting, dashboards and clear spending insights
+        </Card>
+        <Card title="Key features">
+          OCR receipt scanning + automatic categorization (Ollama), shared households, gaming mode
+        </Card>
+        <Card title="My role (Frontend)">
+          Dashboard UI, donut chart, income/expense timeline chart, full household page logic & API integration
+        </Card>
+      </motion.section>
+
+
+      {/* MY CONTRIBUTIONS */}
+      <motion.section
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeUp}
+        className="rounded-3xl border border-black/10 bg-white/50 p-7 md:p-10"
+      >
+        <h2 className="text-2xl font-bold">What I implemented</h2>
+
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="rounded-2xl border border-black/10 bg-white/60 p-5">
+            <p className="font-semibold">Donut chart — spending by category</p>
+            <p className="mt-2 text-sm text-black/70">
+              Grouped expenses by category, displayed totals and percentages, supported filtering and clean legends.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-black/10 bg-white/60 p-5">
+            <p className="font-semibold">Timeline chart — income & expenses over time</p>
+            <p className="mt-2 text-sm text-black/70">
+              Implemented a time-based chart with toggles (expenses / income / both) and consistent UI states.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-black/10 bg-white/60 p-5">
+            <p className="font-semibold">Household page — multi-user logic</p>
+            <p className="mt-2 text-sm text-black/70">
+              Built the household page end-to-end: data mapping, household switch, UI logic and correct assignment of data per household.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-black/10 bg-white/60 p-5">
+            <p className="font-semibold">Dashboard UI & polish</p>
+            <p className="mt-2 text-sm text-black/70">
+              UI optimizations, bug fixes, responsive improvements, and API-data integration into visualization components.
+            </p>
+          </div>
+        </div>
+      </motion.section>
+
 
       {/* NEXT */}
       <motion.section

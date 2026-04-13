@@ -146,7 +146,7 @@ export default function ProjectsPage() {
             logoAlt="FineCash logo"
             tags={["React", "TypeScript", "Tailwind", "Data Visualization", "FinTech"]}
             title="FineCash"
-            description="FineCash is a web app for managing personal and shared household finances with dashboards, OCR receipt scanning and AI-based categorization. On this project, I focused on dashboard UI, charts, household logic and API data integration."
+            description="FineCash is a web app for managing personal and shared household finances with dashboards, OCR receipt scanning and AI-based categorization"
             caseStudyLink="/projects/finecash"
             repositoryLink="https://gitlab.bht-berlin.de/finecash"
             websiteLink="https://www.finecash.de"
@@ -157,7 +157,7 @@ export default function ProjectsPage() {
             logoAlt="CrazyFM logo"
             tags={["Handlebars", "JavaScript", "CSS", "SQLite", "CRUD", "Authentication"]}
             title="CrazyFM"
-            description="CrazyFM is a radio platform with shows, podcasts, schedule, subscriptions and authentication. In this project, I focused on page structure, reusable partials, forms, database-connected rendering and feature flows such as subscriptions and show management."
+            description="CrazyFM is a radio platform with shows, podcasts, schedule, subscriptions and authentication"
             caseStudyLink="/projects/crazyfm"
             repositoryLink="https://gitlab.bht-berlin.de/anko3273/we1-assignments-ws25"
           />

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profileImg from "../assets/profile/me.webp";
+//import profileImg from "../assets/profile/me.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
@@ -89,14 +89,14 @@ export default function AboutPage() {
               </span>
 
               <span className="rounded-full border border-black/10 bg-white/60 px-4 py-2">
-                German C1 • English B2 • Ukrainian native
+                German C1-C2 • English B2 • Ukrainian native
               </span>
             </div>
           </div>
 
           {/* RIGHT — PHOTO */}
 
-          <div className="flex h-[180px] w-[180px] shrink-0 items-center justify-center rounded-[28px] border border-black/10 bg-white/70 shadow-sm md:h-[220px] md:w-[220px]">
+          {/* <div className="flex h-[180px] w-[180px] shrink-0 items-center justify-center rounded-[28px] border border-black/10 bg-white/70 shadow-sm md:h-[220px] md:w-[220px]">
             <img
               src={profileImg}
               alt="Anna Kornafel"
@@ -104,7 +104,7 @@ export default function AboutPage() {
               loading="lazy"
               decoding="async"
             />
-          </div>
+          </div> */}
 
         </div>
       </motion.section>
@@ -312,34 +312,6 @@ export default function AboutPage() {
             <li>HTML5 / CSS3 / JavaScript Fundamentals (SoftServe Academy) – 2023</li>
             <li>Database Fundamentals (SoftServe Academy) – 2024</li>
           </ul>
-        </SectionCard>
-      </motion.section>
-
-      <motion.section
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeUp}
-        className="grid gap-4 md:grid-cols-3"
-      >
-        <SectionCard title="Languages">
-          <ul className="list-disc space-y-2 pl-5">
-            <li>Ukrainian — native</li>
-            <li>German — C1-C2</li>
-            <li>English — B2</li>
-          </ul>
-        </SectionCard>
-
-        <SectionCard title="Interests">
-          UI/UX, frontend development, digital products, continuous learning,
-          structured problem solving and teamwork.
-        </SectionCard>
-
-        <SectionCard title="Based in">
-          Berlin, Germany
-          <div className="mt-2 text-sm text-black/65">
-            Open to learning opportunities, project work and frontend/UI-oriented roles.
-          </div>
         </SectionCard>
       </motion.section>
     </div>
