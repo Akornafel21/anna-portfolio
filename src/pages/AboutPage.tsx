@@ -311,8 +311,8 @@ export default function AboutPage() {
             <li>Business Analysis (EPAM University Program) – 2023</li>
             <li>HTML5 / CSS3 / JavaScript Fundamentals (SoftServe Academy) – 2023</li>
             <li>Database Fundamentals (SoftServe Academy) – 2024</li>
-            <li>Claude 101 (Anthropic Academy) – 2025</li>
-            <li>AI Fluency: Framework & Foundations (Anthropic Academy) – 2025</li>
+            <li>Claude 101 (Anthropic Academy) – 2026</li>
+            <li>AI Fluency: Framework & Foundations (Anthropic Academy) – 2026</li>
           </ul>
         </SectionCard>
       </motion.section>
