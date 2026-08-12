@@ -21,7 +21,7 @@ export default function ContactPage() {
           Open to Werkstudent roles · Berlin
         </p>
         <h1 className="text-4xl font-extrabold tracking-tight text-brand-text md:text-5xl">
-          Let's connect.
+          Let's connect
         </h1>
         <p className="mt-3 max-w-lg text-base leading-7 text-black/60">
           Available for frontend Werkstudent positions in Berlin. Always happy to talk about projects, ideas, or opportunities
