@@ -75,8 +75,9 @@ export default function AboutPage() {
             <p className="mt-4 max-w-2xl text-lg leading-relaxed text-black/70">
               I am a motivated and detail-oriented Media Informatics student at BHT Berlin
               with practical experience in software development, business analysis and
-              user-centered design. I enjoy building clean digital products, learning new
-              technologies and working in structured, collaborative teams.
+              user-centered design
+              I enjoy building clean digital products, learning new
+              technologies and working in structured, collaborative teams
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3 text-sm text-black/65">
@@ -109,28 +110,40 @@ export default function AboutPage() {
         </div>
       </motion.section>
 
-      <motion.section
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeUp}
-        className="grid gap-4 md:grid-cols-3"
-      >
-        <SectionCard title="Profile">
-          Strong academic foundation in software development, UX and digital media
-          systems, combined with practical project work and communication experience.
-        </SectionCard>
+<motion.section
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.2 }}
+  variants={fadeUp}
+  className="grid gap-4 md:grid-cols-3"
+>
+  <div className="rounded-3xl border border-black/10 bg-white/60 p-6 shadow-sm">
+    <p className="text-sm font-semibold text-brand-text mb-3">Profile</p>
+    <div className="flex flex-wrap gap-1.5">
+      {["Software development", "UX design", "Digital media", "Project work"].map(t => (
+        <span key={t} className="rounded-full border border-black/10 bg-white/80 px-2.5 py-1 text-xs text-black/70">{t}</span>
+      ))}
+    </div>
+  </div>
 
-        <SectionCard title="Focus">
-          Interested in frontend development, UI clarity, user-centered design and
-          building structured web applications with clean logic.
-        </SectionCard>
+  <div className="rounded-3xl border border-black/10 bg-white/60 p-6 shadow-sm">
+    <p className="text-sm font-semibold text-brand-text mb-3">Focus</p>
+    <div className="flex flex-wrap gap-1.5">
+      {["Frontend development", "UI clarity", "User-centered design", "Clean architecture"].map(t => (
+        <span key={t} className="rounded-full border border-black/10 bg-white/80 px-2.5 py-1 text-xs text-black/70">{t}</span>
+      ))}
+    </div>
+  </div>
 
-        <SectionCard title="Strengths">
-          Teamwork, intercultural communication, adaptability, attention to detail and
-          continuous learning.
-        </SectionCard>
-      </motion.section>
+  <div className="rounded-3xl border border-black/10 bg-white/60 p-6 shadow-sm">
+    <p className="text-sm font-semibold text-brand-text mb-3">Strengths</p>
+    <div className="flex flex-wrap gap-1.5">
+      {["Teamwork", "Intercultural communication", "Attention to detail", "Continuous learning"].map(t => (
+        <span key={t} className="rounded-full border border-black/10 bg-white/80 px-2.5 py-1 text-xs text-black/70">{t}</span>
+      ))}
+    </div>
+  </div>
+</motion.section>
 
       <motion.section
         initial="hidden"
@@ -142,60 +155,36 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold text-brand-text">Technical skills</h2>
 
         <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          <InfoItem
-            title="Programming"
-            details={
-              <ul className="list-disc space-y-1 pl-5">
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>HTML & CSS</li>
-                <li>SQL (SQLite)</li>
-                <li>NoSQL</li>
-                <li>MongoDB</li>
-                <li>Node.js</li>
-                <li>React (basic knowledge)</li>
-              </ul>
-            }
-          />
-
-          <InfoItem
-            title="Tools"
-            details={
-              <ul className="list-disc space-y-1 pl-5">
-                <li>Git & GitHub</li>
-                <li>Figma</li>
-                <li>Postman</li>
-                <li>Eclipse</li>
-                <li>Visual Studio Code</li>
-                <li>1C System</li>
-              </ul>
-            }
-          />
-
-          <InfoItem
-            title="Frameworks & methods"
-            details={
-              <ul className="list-disc space-y-1 pl-5">
-                <li>Bootstrap</li>
-                <li>REST APIs</li>
-                <li>OOP</li>
-                <li>Scrum</li>
-              </ul>
-            }
-          />
-
-          <InfoItem
-            title="Modeling"
-            details={
-              <ul className="list-disc space-y-1 pl-5">
-                <li>UML</li>
-                <li>BPMN</li>
-                <li>Entity-Relationship models</li>
-                <li>UML Use Case Diagrams</li>
-              </ul>
-            }
-          />
+    {[
+      {
+        title: "Languages",
+        items: ["JavaScript", "TypeScript", "Java", "HTML & CSS", "SQL (SQLite)", "NoSQL / MongoDB"],
+      },
+      {
+        title: "Frameworks",
+        items: ["React", "Tailwind CSS", "Bootstrap", "Node.js", "Expo / React Native"],
+      },
+      {
+        title: "Tools",
+        items: ["Git & GitHub", "Figma", "Postman", "Android Studio", "1C System", "AI-assisted Development"],
+      },
+      {
+        title: "Methods",
+        items: ["BPMN", "UML / ER Models", "REST APIs", "OOP", "Scrum"],
+      },
+    ].map(({ title, items }) => (
+      <div key={title} className="rounded-2xl border border-black/10 bg-white/60 p-5">
+        <p className="font-semibold text-brand-text mb-3">{title}</p>
+        <div className="flex flex-wrap gap-1.5">
+          {items.map(item => (
+            <span key={item} className="rounded-full border border-black/10 bg-white/80 px-2.5 py-1 text-xs text-black/70">
+              {item}
+            </span>
+          ))}
         </div>
+      </div>
+    ))}
+  </div>
       </motion.section>
 
       <motion.section
